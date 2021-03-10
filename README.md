@@ -1,6 +1,8 @@
 # Food - Disease Relation Extraction dataset
-The FoodDisease dataset contains 608 sentences annotated for the existence of _cause_ and _treat_ relations between food and disease entities. The sentences were extracted from abstracts of biomedical research papers published in PubMed.
+The FoodDisease dataset contains 608 sentences annotated for the existence of _cause_ and _treat_ relations between food and disease entities. 
+![Dataset creation pipeline](https://github.com/gjorgjinac/food-disease-dataset/blob/main/creation_pipeline.PNG?raw=true "Creation pipeline")
 
+The sentences were extracted from abstracts of biomedical research papers published in PubMed.
 [BuTTER](https://github.com/gjorgjinac/butter) [1] and [SABER](https://baderlab.github.io/saber/) [2] were used for finding the food and disease entities in each abstract. BuTTER is a Named Entity Recognition (NER) method which extracts food entities from raw text, while SABER is a biomedical NER tool which extracts disease entities. Both methods are based on Bidirectional Long Short-Term Memory and Conditional Random Fields. In particular, we used the lexical lemmatized BuTTER model introduced in [1], and the [DISO pretrained model](https://baderlab.github.io/saber/resources/) from the SABER tool.
 The SABER tool also performs Named Entity Linking (NEL), so that some of the extracted disease entities are linked to concepts in the Disease Ontology.
 
