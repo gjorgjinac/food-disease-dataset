@@ -9,7 +9,7 @@ Finally, each sentence was assigned binary labels to indicate if the _cause_ and
 
 Each sample in the dataset contains:
 * food_entity: the name of the food entity extracted by BuTTER and manually curated
-* disease_entity: the name of the food entity extracted by SABER and manually curated
+* disease_entity: the name of the disease entity extracted by SABER and manually curated
 * sentence: the sentence in which the food and disease entities co-occur
 * disease_doid: the id of the disease in the Disease Ontology, as extracted by SABER
 * is_cause: binary indicator of the existence of the _cause_ relation between the food and disease entities
@@ -19,4 +19,5 @@ All fields except disease_doid are non-nullable.
 
 
 [1] Gjorgjina Cenikj, Gorjan Popovski, Riste Stojanov, Barbara Koroušić Seljak, and Tome Eftimov. 2020. BuTTER: BidirecTional LSTM for Food Named-Entity Recognition. In Proc. Big Food and Nutrition Data Management and Analysis at IEEE BigData 2020, Atlanta, USA.
+
 [2] John Giorgi and Gary Bader. 2019. Towards reliable named entity recognition in the biomedical domain. bioRxiv
